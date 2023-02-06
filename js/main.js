@@ -3,10 +3,6 @@
 
 
 
-
-// BONUS 1:
-// Trasformare la stringa foto in una immagine effettiva
-
 // BONUS 2:
 // Organizzare i singoli membri in card / schede
 
@@ -73,7 +69,9 @@ console.log(team);
 const teamMembers = document.getElementById("team");
 
 for (let i = 0; i < team.length; i++) {
-    for (let j = 0; j < 3; j++) {
-        teamMembers.innerHTML += team[i].nome[j] + "<br>" + team[i].ruolo[j] + "<br>" + team[i].foto[j] + "<br>";
-    }
+    teamMembers.innerHTML += team[i].nome + "<br>" + team[i].ruolo + "<br>" + team[i].foto + "<br><br>";
 }
+
+
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
