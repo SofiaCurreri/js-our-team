@@ -27,7 +27,7 @@ const team = [
     {
         nome: "Wayne Barnett",
         ruolo: "Founder & CEO",
-        foto: "wayne-barnett-founder-ceo.jpg"
+        foto: "wayne-barnett-founder-ceo.jpg",
     },
 
     {
@@ -58,7 +58,7 @@ const team = [
         nome: "Barbara Ramos",
         ruolo: "Graphic Designer",
         foto: "barbara-ramos-graphic-designer.jpg"
-    },
+    }
 ];
 
 
