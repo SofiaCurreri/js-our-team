@@ -1,10 +1,5 @@
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
-// Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
-
-
-
-// BONUS 2:
-// Organizzare i singoli membri in card / schede
+// Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto
 
 //INFO MEMBRI
 // Wayne Barnett		Founder & CEO			wayne - barnett - founder - ceo.jpg
@@ -76,12 +71,25 @@ const teamMembers = document.getElementById("team");
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 
+// for (let i = 0; i < team.length; i++) {
+//     teamMembers.innerHTML += `
+//     ${team[i].nome} 
+//     <br>
+//     ${team[i].ruolo} 
+//     <br>
+//     <img src = "./img/${team[i].foto}"> 
+//     <br><br>`;
+// }
+
+
+// BONUS 2:
+// Organizzare i singoli membri in card / schede
+
 for (let i = 0; i < team.length; i++) {
     teamMembers.innerHTML += `
-        ${team[i].nome} 
-        <br>
-        ${team[i].ruolo} 
-        <br>
+    <div class = "card text-center mx-4 my-5"> 
         <img src = "./img/${team[i].foto}"> 
-        <br><br>`;
+        <h2 class = "mt-3"> ${team[i].nome} </h2>
+        <h4 class = "mt-1 mb-3"> ${team[i].ruolo} </h4>
+    </div>`;
 }

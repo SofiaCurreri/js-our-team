@@ -1,0 +1,12 @@
+body {
+    font-family: 'Waiting for the Sunrise', cursive;
+    background-color: rgb(129, 114, 114);
+}
+
+header p {
+    width: 40%;
+}
+
+.card {
+    width: calc(100% / 3 - 3rem);
+}
