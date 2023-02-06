@@ -68,10 +68,20 @@ console.log(team);
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 const teamMembers = document.getElementById("team");
 
-for (let i = 0; i < team.length; i++) {
-    teamMembers.innerHTML += team[i].nome + "<br>" + team[i].ruolo + "<br>" + team[i].foto + "<br><br>";
-}
+// for (let i = 0; i < team.length; i++) {
+//     teamMembers.innerHTML += team[i].nome + "<br>" + team[i].ruolo + "<br>" + team[i].foto + "<br><br>";
+// }
 
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
+
+for (let i = 0; i < team.length; i++) {
+    teamMembers.innerHTML += `
+        ${team[i].nome} 
+        <br>
+        ${team[i].ruolo} 
+        <br>
+        <img src = "./img/${team[i].foto}"> 
+        <br><br>`;
+}
